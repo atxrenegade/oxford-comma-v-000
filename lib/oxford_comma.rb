@@ -4,9 +4,9 @@ def oxford_comma(array)
     array.pop
     string = array.join(", ")
     return string + ", and #{last_word}"
-  else if array.count == 2
+  elsif array.count == 2
     array.join(" and ")
   else
-    array    
+    array
   end
 end
