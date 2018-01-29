@@ -1,7 +1,12 @@
 def oxford_comma(array)
-  last_word = array.last
-  array.pop
-  string = array.join(", ")
-  string = string + ", and #{last_word}"
-  string
+  if array.count > 2
+    last_word = array.last
+    array.pop
+    string = array.join(", ")
+    return string + ", and #{last_word}"
+  else if array.count == 2
+    array.join(" and ")
+  else
+    array    
+  end
 end
