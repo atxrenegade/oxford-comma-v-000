@@ -1,7 +1,6 @@
 def oxford_comma(array)
   if array.count > 2
-    last_word = array.last
-    array.pop
+    last_word = array.pop
     string = array.join(", ")
     return string + ", and #{last_word}"
   elsif array.count == 2
@@ -10,3 +9,4 @@ def oxford_comma(array)
     array[0]
   end
 end
+
